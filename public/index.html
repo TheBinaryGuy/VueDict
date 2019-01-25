@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>VueDict</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but VueDict doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>Frontend: Urban Dictionary</title>
+
+  <style>
+    .float {
+      position: fixed;
+      width: calc(100vw - 10vw);
+      height: 50px;
+      bottom: 20px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      background-color: #000;
+      box-shadow: 0 0 5px #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFF;
+    }
+
+    .float a {
+      color: rgb(0, 136, 255);
+      text-decoration: none;
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but VueDict doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <div class="center">
+    <span class="float">&copy; 2019&nbsp;<a href="https://thebinaryguy.me" target="_blank">TheBinaryGuy</a>&nbsp;|&nbsp;Powered
+      by&nbsp;<a href="https://www.urbandictionary.com" target="_blank">Urban Dictionary</a></span>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
